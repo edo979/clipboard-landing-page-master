@@ -141,6 +141,29 @@ p {
   padding-top: 120px;
 }
 
+.flex-md .btn + .btn {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.05rem 3rem;
+  border: 0;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #26baa4;
+  box-shadow: 0 3px 0 #1d907f, 0 10px 15px rgba(60, 215, 192, 0.4);
+}
+.btn-secondary {
+  background-color: #6173ff;
+  box-shadow: 0 3px 0 #2e46ff, 0 10px 15px rgba(148, 160, 255, 0.4);
+}
+
 .flow > * + * {
   margin-top: 1rem;
 }

@@ -3,3 +3,9 @@
   margin-inline: auto;
   padding-top: 120px;
 }
+
+.flex-md {
+  .btn + .btn {
+    margin-top: 1.5rem;
+  }
+}

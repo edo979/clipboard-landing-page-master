@@ -1,0 +1,24 @@
+.btn {
+  width: 100%;
+  padding: 1.05rem 3rem;
+  border: 0;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: white;
+  line-height: 1;
+
+  cursor: pointer;
+
+  &-primary {
+    background-color: $Strong-Cyan;
+    box-shadow: 0 3px 0 $Strong-Cyan-500,
+      0 10px 15px rgba($color: $Strong-Cyan-300, $alpha: 0.4);
+  }
+
+  &-secondary {
+    background-color: $Light-Blue;
+    box-shadow: 0 3px 0 $Light-Blue-500,
+      0 10px 15px rgba($color: $Light-Blue-300, $alpha: 0.4);
+  }
+}
