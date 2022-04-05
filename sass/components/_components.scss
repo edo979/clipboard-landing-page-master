@@ -1,0 +1,23 @@
+.header {
+  &-logo {
+    margin-inline: auto;
+  }
+
+  text-align: center;
+
+  h1 {
+    margin-top: 4.25rem;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+
+    background-image: url(../images/bg-header-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}

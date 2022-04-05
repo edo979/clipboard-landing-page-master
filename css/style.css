@@ -91,6 +91,12 @@ h2,
 h3,
 .h3 {
   color: #4c545d;
+  line-height: 1.25;
+}
+
+h1,
+.h1 {
+  font-size: 1.75rem;
 }
 
 p {
@@ -109,10 +115,38 @@ p {
   font-size: var(--fs-500);
 }
 
+.header {
+  text-align: center;
+}
+.header-logo {
+  margin-inline: auto;
+}
+.header h1 {
+  margin-top: 4.25rem;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background-image: url(../images/bg-header-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 .main-container {
   width: max(315px, 79vw);
   margin-inline: auto;
   padding-top: 120px;
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
