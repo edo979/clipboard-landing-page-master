@@ -109,4 +109,10 @@ p {
   font-size: var(--fs-500);
 }
 
+.main-container {
+  width: max(315px, 79vw);
+  margin-inline: auto;
+  padding-top: 120px;
+}
+
 /*# sourceMappingURL=style.css.map */
