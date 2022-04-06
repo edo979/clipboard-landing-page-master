@@ -9,3 +9,15 @@
     margin-top: 1.5rem;
   }
 }
+
+@include mq($break-point-md) {
+  .flex-md {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .btn + .btn {
+      margin: 0;
+    }
+  }
+}

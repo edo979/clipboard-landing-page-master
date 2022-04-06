@@ -130,6 +130,7 @@ p {
   top: 0;
   left: 0;
   inset: 0;
+  z-index: -1;
   background-image: url(../images/bg-header-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -189,6 +190,25 @@ article {
   gap: 2rem;
 }
 
+@media (min-width: 600px) {
+  .img-boxes {
+    align-items: start !important;
+  }
+
+  .box {
+    flex: 1 1 33.33%;
+    margin-top: 0 !important;
+  }
+  .box img {
+    height: 40px;
+  }
+
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .main-container {
   width: max(315px, 79vw);
   margin-inline: auto;
@@ -199,6 +219,16 @@ article {
   margin-top: 1.5rem;
 }
 
+@media (min-width: 600px) {
+  .flex-md {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .flex-md .btn + .btn {
+    margin: 0;
+  }
+}
 .nav ul + ul {
   margin-top: 1.5rem;
 }
@@ -220,6 +250,19 @@ article {
   color: #26baa4;
 }
 
+@media (min-width: 600px) {
+  .nav {
+    align-items: start;
+    margin-block: 1rem;
+  }
+  .nav ul + ul {
+    margin-top: 0;
+  }
+  .nav-list {
+    text-align: left;
+    gap: 1rem;
+  }
+}
 .btn {
   width: 100%;
   padding: 1.05rem 3rem;

@@ -15,6 +15,7 @@
     top: 0;
     left: 0;
     inset: 0;
+    z-index: -1;
 
     background-image: url(../images/bg-header-mobile.png);
     background-position: top;
@@ -87,4 +88,26 @@ article {
 .social-links {
   display: flex;
   gap: 2rem;
+}
+
+@include mq($break-point-md) {
+  .img-boxes {
+    align-items: start !important;
+  }
+
+  .box {
+    flex: 1 1 33.33%;
+
+    margin-top: 0 !important;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

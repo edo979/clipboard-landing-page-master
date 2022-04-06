@@ -14,3 +14,12 @@ $Light-Blue-500: hsl(233, 100%, 59%);
 $Dark-Grayish-Blue: hsl(210, 10%, 33%);
 $Grayish-Blue: hsl(201, 11%, 66%);
 $Grayish-Blue-200: hsl(201, 11%, 96%);
+
+$break-point-md: 600px;
+$break-point-lg: 1024px;
+
+@mixin mq($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

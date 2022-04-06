@@ -26,3 +26,19 @@
     }
   }
 }
+
+@include mq($break-point-md) {
+  .nav {
+    align-items: start;
+    margin-block: 1rem;
+
+    ul + ul {
+      margin-top: 0;
+    }
+
+    &-list {
+      text-align: left;
+      gap: 1rem;
+    }
+  }
+}
