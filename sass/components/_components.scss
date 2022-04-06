@@ -111,3 +111,36 @@ article {
     justify-content: center;
   }
 }
+
+@include mq($break-point-lg) {
+  .header {
+    &::before {
+      background-image: url(../images/bg-header-desktop.png);
+    }
+  }
+
+  .hero {
+    justify-content: start !important;
+    gap: 5rem !important;
+
+    &-img {
+      flex: 1 1 60%;
+      margin-left: -30px;
+    }
+
+    &-boxes {
+      flex: 1 1 40%;
+    }
+  }
+
+  .box {
+    max-width: 335px;
+    text-align: left;
+  }
+
+  .footer {
+    .flex-md {
+      justify-content: space-between !important;
+    }
+  }
+}

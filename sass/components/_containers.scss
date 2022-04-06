@@ -21,3 +21,40 @@
     }
   }
 }
+
+@include mq($break-point-lg) {
+  .main-container {
+    width: min(1440px, 100%);
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+  .container {
+    width: min(1110px, 90vw);
+    margin-inline: auto;
+  }
+
+  .px-lg-1 {
+    padding-inline: 185px;
+  }
+
+  .flex-md {
+    justify-content: center;
+  }
+}
+
+@include mq($break-point-lg) {
+  .img-container {
+    img {
+      margin-inline: auto;
+    }
+  }
+
+  .img-boxes,
+  .logos {
+    justify-content: space-between;
+  }
+
+  .box--img-top {
+    text-align: center;
+  }
+}

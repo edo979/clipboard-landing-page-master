@@ -22,3 +22,9 @@
       0 10px 15px rgba($color: $Light-Blue-300, $alpha: 0.4);
   }
 }
+
+@include mq($break-point-lg) {
+  .btn {
+    width: auto;
+  }
+}
