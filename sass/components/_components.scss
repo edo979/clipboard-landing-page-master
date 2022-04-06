@@ -59,4 +59,31 @@ article {
 
 .footer {
   margin-top: 10rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  background-color: $Grayish-Blue-200;
+
+  img {
+    width: 55px;
+  }
+
+  svg {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $Strong-Cyan;
+      }
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
 }
