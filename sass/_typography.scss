@@ -48,3 +48,23 @@ p {
     --fs-500: 1rem;
   }
 }
+@include mq($break-point-lg) {
+  :root {
+    --fs-300: 0.955rem;
+    --fs-400: 1.05rem;
+    --fs-500: 1.2rem;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2.6rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2.1rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.4rem;
+  }
+}

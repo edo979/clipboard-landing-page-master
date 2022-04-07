@@ -60,7 +60,7 @@ article {
 }
 
 .footer {
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -95,10 +95,14 @@ article {
     align-items: start !important;
   }
 
+  .hero-boxes {
+    article:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+
   .box {
     flex: 1 1 33.33%;
-
-    margin-top: 0 !important;
 
     img {
       height: 40px;
@@ -119,28 +123,38 @@ article {
     }
   }
 
+  .main {
+    line-height: 1.7;
+  }
+
   .hero {
     justify-content: start !important;
-    gap: 5rem !important;
+    gap: 6rem !important;
 
     &-img {
-      flex: 1 1 60%;
+      flex: 1 1 55%;
       margin-left: -30px;
     }
 
     &-boxes {
-      flex: 1 1 40%;
+      flex: 1 1 45%;
     }
   }
 
   .box {
-    max-width: 335px;
+    max-width: 360px;
     text-align: left;
   }
 
   .footer {
     .flex-md {
       justify-content: space-between !important;
+      gap: 8rem;
+    }
+
+    .nav {
+      gap: 5rem;
+      margin-right: auto;
     }
   }
 }
