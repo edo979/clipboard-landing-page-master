@@ -374,6 +374,9 @@ article {
   line-height: 1;
   cursor: pointer;
 }
+.btn:hover, .btn:focus {
+  opacity: 0.8;
+}
 .btn-primary {
   background-color: #26baa4;
   box-shadow: 0 3px 0 #1d907f, 0 10px 15px rgba(60, 215, 192, 0.4);

@@ -10,6 +10,11 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
   &-primary {
     background-color: $Strong-Cyan;
     box-shadow: 0 3px 0 $Strong-Cyan-500,
