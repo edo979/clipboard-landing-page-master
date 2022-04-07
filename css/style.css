@@ -206,6 +206,10 @@ article {
 }
 .footer img {
   width: 55px;
+  margin-inline: auto;
+}
+.footer .nav {
+  margin-block: 3rem;
 }
 .footer svg {
   cursor: pointer;
@@ -239,6 +243,11 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .footer img,
+.footer .nav {
+    margin: 0;
   }
 }
 @media (min-width: 1024px) {

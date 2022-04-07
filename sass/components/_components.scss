@@ -71,6 +71,11 @@ article {
 
   img {
     width: 55px;
+    margin-inline: auto;
+  }
+
+  .nav {
+    margin-block: 3rem;
   }
 
   svg {
@@ -113,6 +118,13 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .footer {
+    img,
+    .nav {
+      margin: 0;
+    }
   }
 }
 
